@@ -1,0 +1,146 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Sep 23 01:17:26 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "addauth",
+            "base": "",
+            "fields": [
+                {
+                    "name": "authaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "encryptedsymkey",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "authperson",
+            "base": "",
+            "fields": [
+                {
+                    "name": "authaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "encryptedsymkey",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "encryptedpos",
+            "base": "",
+            "fields": [
+                {
+                    "name": "nb",
+                    "type": "uint64"
+                },
+                {
+                    "name": "encryptedpos",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "state",
+            "base": "",
+            "fields": [
+                {
+                    "name": "state",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lastupdate",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "updatepos",
+            "base": "",
+            "fields": [
+                {
+                    "name": "nb",
+                    "type": "uint64"
+                },
+                {
+                    "name": "newpos",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "updatestate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "state",
+                    "type": "uint64"
+                },
+                {
+                    "name": "lastupdate",
+                    "type": "uint32"
+                }
+            ]
+        }
+    ],
+    "types": [
+        {
+            "new_type_name": "account_name",
+            "type": "name"
+        },
+        {
+            "new_type_name": "uint32_t",
+            "type": "uint32"
+        },
+        {
+            "new_type_name": "uint64_t",
+            "type": "uint64"
+        }
+    ],
+    "actions": [
+        {
+            "name": "addauth",
+            "type": "addauth",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatepos",
+            "type": "updatepos",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatestate",
+            "type": "updatestate",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "authpersons",
+            "type": "authperson",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "cstate",
+            "type": "state",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "lencryptpos",
+            "type": "encryptedpos",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}

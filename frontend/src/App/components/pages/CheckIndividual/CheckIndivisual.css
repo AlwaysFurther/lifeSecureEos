@@ -1,0 +1,5 @@
+.CheckIndividual .personPhoto {
+  width: 40%; }
+  @media only screen and (min-width: 765px) {
+    .CheckIndividual .personPhoto {
+      width: 20%; } }

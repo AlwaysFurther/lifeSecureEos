@@ -1,0 +1,49 @@
+.Menubar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background: white;
+  padding-left: 0px;
+  padding-right: 0px;
+  z-index: 2; }
+  .Menubar .menubar-link-group {
+    padding: 10px; }
+  .Menubar a.menubar-link-item {
+    padding: 10px 4% 10px 4%;
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    margin: 4%; }
+    @media only screen and (max-width: 380px) {
+      .Menubar a.menubar-link-item {
+        padding: 10px 2% 10px 2%;
+        font-size: 1rem; } }
+  .Menubar a.menubar-link-item:hover {
+    background-color: rgba(248, 249, 250, 0.5);
+    box-shadow: 5px 2px 5px #00000036;
+    border-bottom: 4px steelblue;
+    transition: background-color 1s, box-shadow 1s; }
+  .Menubar a.menubar-link-item:focus {
+    background-color: rgba(248, 249, 250, 0.5);
+    box-shadow: 5px 2px 5px #00000036;
+    border-bottom: 4px solid gray;
+    transition: background-color 1s, box-shadow 1s; }
+  .Menubar a.menubar-link-item.active {
+    background-color: rgba(248, 249, 250, 0.5);
+    box-shadow: 5px 2px 5px #00000036;
+    border-bottom: 4px solid gray;
+    transition: background-color 1s, box-shadow 1s; }
+  .Menubar .menubar-btn {
+    color: black;
+    position: fixed;
+    right: 15px;
+    top: 9px;
+    z-index: 4;
+    height: 33px;
+    width: 33px; }
+  .Menubar .menubar-item {
+    padding: 10px;
+    font-size: 45px; }
+  .Menubar .menubar-item a {
+    text-decoration: none;
+    color: grey; }

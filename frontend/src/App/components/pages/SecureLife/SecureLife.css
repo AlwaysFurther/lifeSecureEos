@@ -1,0 +1,10 @@
+.SecureLife .personPhoto {
+  width: 40%; }
+  @media only screen and (min-width: 765px) {
+    .SecureLife .personPhoto {
+      width: 20%; } }
+
+.SecureLife .changeUser {
+  position: fixed;
+  top: 3.5rem;
+  right: 0.5rem; }
